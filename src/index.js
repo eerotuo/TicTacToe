@@ -13,8 +13,8 @@ if (table != null) {
   for (var i = 0; i < table.rows.length; i++) {
     for (var j = 0; j < table.rows[i].cells.length; j++)
       table.rows[i].cells[j].onclick = function() {
-        resetTimeOut();
-        VarTimeout = setTimeout(timeOutAlert, 10000);
+        //resetTimeOut();
+        //VarTimeout = setTimeout(timeOutAlert, 10000);
         tableText(this);
         checkWinnerHorisontal(table);
         checkWinnerVertical(table);
@@ -26,6 +26,7 @@ if (table != null) {
 function tableText(tableCell) {
   var vaaka = tableCell.parentElement.rowIndex;
   var pysty = tableCell.cellIndex;
+
   timerii();
   timeri2();
   timer++;
